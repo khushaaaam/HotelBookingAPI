@@ -14,7 +14,7 @@ class RoomBase(BaseModel):
 
 
 class RoomCreate(RoomBase):
-    pass
+    pass# Inherits all required fields from RoomBase
 
 
 class RoomUpdate(BaseModel):
