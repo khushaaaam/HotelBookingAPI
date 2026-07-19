@@ -131,7 +131,10 @@ def delete_booking(booking_id: UUID) -> Response:
             detail="Booking not found",
         )
 
-    rooms_db[booking["room_id"]]["is_available"] = True
+    if booking["booking_status"] == "confirmed":
+        room = rooms_db.get(booking["room_id"])
+        if room is not None:
+            room["is_available"] = True
 
     del bookings_db[booking_id]
 
