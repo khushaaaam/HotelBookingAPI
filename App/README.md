@@ -159,8 +159,8 @@ FastAPI automatically generates interactive API documentation.
 
 ```json
 {
-  "guest_name": "Asha Sharma",
-  "guest_email": "asha@example.com",
+  "guest_name": "alex",
+  "guest_email": "alex@example.com",
   "room_id": "PASTE_ROOM_UUID_HERE",
   "check_in": "2026-08-10",
   "check_out": "2026-08-13"
